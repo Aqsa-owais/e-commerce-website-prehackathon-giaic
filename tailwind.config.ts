@@ -1,3 +1,4 @@
+import { Poppins } from 'next/font/google'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -8,6 +9,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      letterSpacing:{
+        '3pct':'3%'
+      },
+      fontFamily: {
+        Poppins:['Poppins','sans-serif'],
+        inter:['Inter','sans-serif']
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
